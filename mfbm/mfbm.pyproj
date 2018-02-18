@@ -32,7 +32,6 @@
     <Compile Include="fbmsolution\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="mfbm.py" />
     <Compile Include="mfbmsolution\__init__.py">
       <SubType>Code</SubType>
     </Compile>
