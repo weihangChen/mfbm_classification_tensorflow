@@ -16,7 +16,7 @@ alt="mfbm" width="240" height="180" border="10" /></a>
 
 ## Solution proposals
 ### Proposal1
-Each alphabet is mapped to three digits and each digit is further mapped to one Hurst value. For example, “a”=>”000”=>”H0.7/H0.7/H0.7”, “f”=>”012”=>”H0.7/H0.75/H0.8”. When alphabet “a” is sent, three Brownian motion random walk realizations using Hurst value 0.7 occur, and 256 * 3 digits in total is sent. The classifier classifies each 256 digits and get “000”, hence “a” is obtained. In this solution, Hurst value in each realization remains the same. With 256 as sequence length, we achieve a 95% accuracy on this solution. 
+Each alphabet is mapped to three digits and each digit is further mapped to one Hurst value ("0" corresponds to "H0.7", "1" corresponds to "H0.75" and "2" correponds to "H0.8"). For example, “a”=>”000”=>”H0.7/H0.7/H0.7”, “f”=>”012”=>”H0.7/H0.75/H0.8”. When alphabet “a” is sent, three Brownian motion random walk realizations using Hurst value 0.7 occur, and 256 * 3 digits in total is sent. The classifier classifies each 256 digits and get “000”, hence “a” is obtained. In this solution, Hurst value in each realization remains the same. With 256 as sequence length, we achieve a 95% accuracy on this solution. 
 
 Hurst 0.8: 
 ![Figure - 0.8][fbm_h8]
