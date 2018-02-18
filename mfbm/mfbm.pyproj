@@ -58,6 +58,8 @@
     <Content Include="images\fbm_h8.JPG" />
     <Content Include="images\mfbm.JPG" />
     <Content Include="images\mfmb_600_acc_3chars.JPG" />
+    <Content Include="images\ramp.JPG" />
+    <Content Include="README.md" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
