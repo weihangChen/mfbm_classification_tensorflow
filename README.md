@@ -73,4 +73,6 @@ Without changing the sequence length and deep learning architecture, when Hurst 
 
 [mfmb_600_acc_3chars]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfmb_600_acc_3chars.JPG "mfmb_600_acc_3chars"
 
+## Source Code
+There are two packages - "fbmsolution" and "mfbmsolution", each package contains two entry files "solution.cs" and "training.cs". They can be run seperately for test.
 
