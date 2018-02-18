@@ -6,7 +6,15 @@ We used to apply deep learning to data that are given, in this task, we will try
 * We need to modify this [fmb project](https://github.com/crflynn/fbm) and make it multifractional. 
 * Apply machine learning technique to the generated fbm realizations.
 
-Two solutions are discussed in the second section, “correlated random number generation” and “machine learning training” are discussed in section three and four.
+Two solutions are discussed in the second section, “correlated random number generation” and “machine learning training” are discussed in section three and four. Here are two simple videoes showing the encode, classify and decode process, first video is done in fbm and the second is done in mfbm.
+
+<a href="https://youtu.be/AEjreQ62tzM
+" target="_blank"><img src="http://img.youtube.com/vi/AEjreQ62tzM/0.jpg" 
+alt="fbm" width="240" height="180" border="10" /></a>
+
+<a href="https://youtu.be/SntcxVjUj9A
+" target="_blank"><img src="http://img.youtube.com/vi/SntcxVjUj9A/1.jpg" 
+alt="mfbm" width="240" height="180" border="10" /></a>
 
 ## Solution proposals
 ### Proposal1
@@ -55,6 +63,8 @@ Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](h
 ![Figure - 11][fbm_256_acc_26chars]
 
 [fbm_256_acc_26chars]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/fbm_256_acc_26chars.JPG "fbm_256_acc_26chars"
+
+
 
 **Solution2**:
 Without changing the sequence length and deep learning architecture, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99%.
