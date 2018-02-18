@@ -12,7 +12,24 @@ Two solutions are discussed in the second section, “correlated random number g
 ### Proposal1
 Each alphabet is mapped to three digits and each digit is further mapped to one Hurst value. For example, “a”=>”000”=>”H0.7/H0.7/H0.7”, “f”=>”012”=>”H0.7/H0.75/H0.8”. When alphabet “a” is sent, three Brownian motion random walk realizations using Hurst value 0.7 occur, and 256 * 3 digits in total is sent. The classifier classifies each 256 digits and get “000”, hence “a” is obtained. In this solution, Hurst value in each realization remains the same. With 256 as sequence length, we achieve a 95% accuracy on this solution. 
 
-
+Hurst 0.8: 
 ![Figure - 0.8][fbm_h8]
 
 [fbm_h8]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/fbm_h8.JPG "fbm_h8"
+
+Hurst 0.4:
+![Figure - 0.4][fbm_h4]
+
+[fbm_h4]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/fbm_h4.JPG "fbm_h4"
+
+### Proposal2
+Here we utilize the characteristics of multi fractional Brownian motion where Hurst value is dynamic and each unique Hurst function corresponds to one label. Following realization is dominated by a Hurst function in form of ramp function.
+![Figure - 0.5][ramp]
+
+[ramp]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/ramp.JPG "ramp"
+
+A realization that is multifractional:
+
+![Figure - 0.9][mfbm1]
+
+[mfbm1]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfbm.JPG "mfbm1"
