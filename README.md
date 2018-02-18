@@ -8,12 +8,10 @@ We used to apply machine learning technique to gathered data, in this task, we w
 
 Two solutions are discussed in the second section, “correlated random number generation” and “machine learning training” are discussed in section three and four. Here are two simple videoes showing the encode, classify and decode process, first video is done in fbm and the second is done in mfbm.
 
-<a href="https://youtu.be/AEjreQ62tzM
-" target="_blank"><img src="http://img.youtube.com/vi/AEjreQ62tzM/0.jpg" 
+<a href="https://youtu.be/AEjreQ62tzM" target="_blank"><img src="http://img.youtube.com/vi/AEjreQ62tzM/0.jpg" 
 alt="fbm" width="240" height="180" border="10" /></a>
 
-<a href="https://youtu.be/SntcxVjUj9A
-" target="_blank"><img src="http://img.youtube.com/vi/SntcxVjUj9A/1.jpg" 
+<a href="https://youtu.be/SntcxVjUj9A" target="_blank"><img src="http://img.youtube.com/vi/SntcxVjUj9A/1.jpg" 
 alt="mfbm" width="240" height="180" border="10" /></a>
 
 ## Solution proposals
