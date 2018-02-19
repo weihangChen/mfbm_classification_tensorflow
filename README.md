@@ -65,7 +65,7 @@ Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](h
 
 
 **Solution2**:
-Without changing the sequence length and deep learning architecture, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99%.
+Sequence length is 600 and deep learning architecture remains the same, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99%.
 
 ![Figure - 12][mfmb_600_acc_3chars]
 
