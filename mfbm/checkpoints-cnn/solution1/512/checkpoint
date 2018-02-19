@@ -1,0 +1,2 @@
+model_checkpoint_path: "brownian.ckpt"
+all_model_checkpoint_paths: "brownian.ckpt"

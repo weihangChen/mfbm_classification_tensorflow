@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1d372a4d-782b-4eab-9874-f17445342660</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mfbmsolution\solution.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,14 +44,44 @@
     <Compile Include="mfbmsolution\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution1\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution1\128\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution1\256\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution1\512\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution2\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\solution2\3digits\" />
     <Folder Include="fbmsolution\" />
     <Folder Include="mfbmsolution\" />
     <Folder Include="images\" />
+    <Folder Include="C:\Users\weihang\Documents\Visual Studio 2017\Projects\mfbm\mfbm\checkpoints-cnn\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="checkpoints-cnn\brownian.ckpt.data-00000-of-00001" />
+    <Content Include="checkpoints-cnn\brownian.ckpt.index" />
+    <Content Include="checkpoints-cnn\brownian.ckpt.meta" />
+    <Content Include="checkpoints-cnn\checkpoint" />
+    <Content Include="checkpoints-cnn\solution1\128\brownian.ckpt.data-00000-of-00001" />
+    <Content Include="checkpoints-cnn\solution1\128\brownian.ckpt.index" />
+    <Content Include="checkpoints-cnn\solution1\128\brownian.ckpt.meta" />
+    <Content Include="checkpoints-cnn\solution1\128\checkpoint" />
+    <Content Include="checkpoints-cnn\solution1\256\brownian.ckpt.data-00000-of-00001" />
+    <Content Include="checkpoints-cnn\solution1\256\brownian.ckpt.index" />
+    <Content Include="checkpoints-cnn\solution1\256\brownian.ckpt.meta" />
+    <Content Include="checkpoints-cnn\solution1\256\checkpoint" />
+    <Content Include="checkpoints-cnn\solution1\512\brownian.ckpt.data-00000-of-00001" />
+    <Content Include="checkpoints-cnn\solution1\512\brownian.ckpt.index" />
+    <Content Include="checkpoints-cnn\solution1\512\brownian.ckpt.meta" />
+    <Content Include="checkpoints-cnn\solution1\512\checkpoint" />
+    <Content Include="checkpoints-cnn\solution2\3digits\brownian.ckpt.data-00000-of-00001" />
+    <Content Include="checkpoints-cnn\solution2\3digits\brownian.ckpt.index" />
+    <Content Include="checkpoints-cnn\solution2\3digits\brownian.ckpt.meta" />
+    <Content Include="checkpoints-cnn\solution2\3digits\checkpoint" />
     <Content Include="fbmsolution\readme.txt" />
     <Content Include="images\fbm_256_acc_26chars.JPG" />
     <Content Include="images\fbm_h4.JPG" />
@@ -59,7 +89,6 @@
     <Content Include="images\mfbm.JPG" />
     <Content Include="images\mfmb_600_acc_3chars.JPG" />
     <Content Include="images\ramp.JPG" />
-    <Content Include="README.md" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

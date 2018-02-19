@@ -10,7 +10,7 @@
 #folder, virtual environment is in big size, ignore
 env/
 data/
-checkpoints-cnn/
+
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
