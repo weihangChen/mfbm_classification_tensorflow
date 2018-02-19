@@ -72,5 +72,5 @@ Sequence length is 600 and deep learning architecture remains the same, when Hur
 [mfmb_600_acc_3chars]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfmb_600_acc_3chars.JPG "mfmb_600_acc_3chars"
 
 ## Source Code
-There are two packages - "fbmsolution" and "mfbmsolution", each package contains two entry files "solution.cs" and "training.cs". They can be run seperately to debug through the code base.
+There are two packages - "fbmsolution" and "mfbmsolution", each package contains two entry files "solution.cs" and "training.cs". They can be run seperately to debug through the code base. Note: [Tensorflow installation is required](https://www.tensorflow.org/install/) 
 
