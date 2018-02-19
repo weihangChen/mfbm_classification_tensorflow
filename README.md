@@ -16,7 +16,7 @@ alt="mfbm" width="240" height="180" border="10" /></a>
 
 ## Solution proposals
 ### Proposal1
-Each alphabet is mapped to three digits and each digit is further mapped to one Hurst value ("0" corresponds to "H0.7", "1" corresponds to "H0.75" and "2" correponds to "H0.8"). For example, “a”=>”000”=>”H0.7/H0.7/H0.7”, “f”=>”012”=>”H0.7/H0.75/H0.8”. When alphabet “a” is sent, three Brownian motion random walk realizations using Hurst value 0.7 occur, and 256 * 3 digits in total is sent. The classifier classifies each 256 digits and get “000”, hence “a” is obtained. In this solution, Hurst value in each realization remains the same. With 256 as sequence length, we achieve a 95% accuracy on this solution. 
+Each alphabet is mapped to three digits and each digit is further mapped to one Hurst value ("0" corresponds to "H0.7", "1" corresponds to "H0.75" and "2" correponds to "H0.8"). For example, “a”=>”000”=>”H0.7/H0.7/H0.7”, “f”=>”012”=>”H0.7/H0.75/H0.8”. When alphabet “a” is sent, three Brownian motion random walk realizations using Hurst value 0.7 occur, and 256 * 3 digits in total is sent. The classifier classifies each 256 digits and get “000”, hence “a” is obtained. In this solution, Hurst value in each realization remains the same. With 256 as sequence length, we achieve a 95% accuracy on this solution with 3 labels. 
 
 Hurst 0.8: 
 ![Figure - 0.8][fbm_h8]
@@ -65,7 +65,7 @@ Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](h
 
 
 **Solution2**:
-Sequence length is 600 and deep learning architecture remains the same, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99%.
+Sequence length is 600 and deep learning architecture remains the same, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99% with 3 labels
 
 ![Figure - 12][mfmb_600_acc_3chars]
 
