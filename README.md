@@ -1,10 +1,13 @@
 # mfbm_classification_tensorflow
 ## Communication Protocol Summary
-We used to apply machine learning technique to gathered data, in this task, we will try to generate data and covariance matrix ourselves then analyse the generated data. Text input is translated into digit sequences using multifractional Brownian motion and gets sent. Each such digit sequence is a realization of random walk and it is different at each realization. One important characteristics is that the generated digits in each sequence are correlated random numbers, and it makes classification possible. Received digit sequences are classified and get translated back to text content using the model built in CNN and Tensorflow. At technical level, we need to solve three problems. 
 
-* Generate “correlated random number”.
-* We need to modify this [fmb project](https://github.com/crflynn/fbm) and make it multifractional. 
-* Apply machine learning technique to the generated fbm realizations.
+The task is about building a communication protocol, given following user senario as example
+* sender generate number sequence representing 64-characters.  (ex. "a" => "0.001, 0.0023...", "b" => "0.003, 0.4..." ) and send the sequences to receiver
+* receiver decode the sequence back to 64-characters
+
+
+Brownian motion can be used to generate correlated random numbers and the generated sequence is different at each realizationand. The correlation is derived from the covariance matrix and it makes classification possible, hence it is used in the sender side to generate sequence; and we rely on [following project] (https://github.com/crflynn/fbm) for sequence generation. What is more interesting is that we used to apply machine learning technique to gathered data, in this task, the data is manufactured. At the receiver side, we use CNN + Tensorflow to the sequence classifier. 
+
 
 Two solutions are discussed in the second section, “correlated random number generation” and “machine learning training” are discussed in section three and four. Here are two simple videoes showing the encode, classify and decode process, first video is done in fbm and the second is done in mfbm.
 
