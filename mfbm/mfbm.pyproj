@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1d372a4d-782b-4eab-9874-f17445342660</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>mfbmsolution\solution.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,7 +34,6 @@
     </Compile>
     <Compile Include="mfbmsolution\cnnmodels.py" />
     <Compile Include="mfbmsolution\decoder.py" />
-    <Compile Include="mfbmsolution\fbm1.py" />
     <Compile Include="mfbmsolution\hurstactions.py" />
     <Compile Include="mfbmsolution\sender.py" />
     <Compile Include="mfbmsolution\solution.py" />
@@ -47,6 +45,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="checkpoints-cnn\" />
     <Folder Include="checkpoints-cnn\solution1\" />
     <Folder Include="checkpoints-cnn\solution1\128\" />
     <Folder Include="checkpoints-cnn\solution1\256\" />
@@ -80,11 +79,9 @@
     <Content Include="checkpoints-cnn\solution2\3digits\brownian.ckpt.index" />
     <Content Include="checkpoints-cnn\solution2\3digits\brownian.ckpt.meta" />
     <Content Include="checkpoints-cnn\solution2\3digits\checkpoint" />
-    <Content Include="fbmsolution\readme.txt" />
     <Content Include="images\fbm_256_acc_26chars.JPG" />
     <Content Include="images\fbm_h4.JPG" />
     <Content Include="images\fbm_h8.JPG" />
-    <Content Include="images\mfbm.JPG" />
     <Content Include="images\mfmb_600_acc_3chars.JPG" />
     <Content Include="images\ramp.JPG" />
     <Content Include="requirements.txt" />

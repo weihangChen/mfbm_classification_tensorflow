@@ -1,7 +1,9 @@
 import numpy as np
 from variables import *
-from fbm1 import * 
+from fbm import * 
 import copy
+
+
 
 def get_all_pathes():
     pathes = [[0.6],[0.6499999999999999]]
@@ -89,49 +91,28 @@ def generate_training_data1(count):
     return np.array(data), np.array(labels)
    
 
+
+
 def generate_training_data(count):    
     data = []
     labels = []
 
-    action11 = HurstUpOrDown(0.6, 150, 600, "up")
-    action12 = HurstUpOrDown(0.6499999999999999, 350, 600, "down")
-    hurst_actions1 = [action11, action12]
+
     for x in range(0,count):       
-        serie = fbm(seq_len-1, 0.6, 1, 'daviesharte', hurst_actions1)
+        serie = mbm(n=seq_len-1, hurst=h1, length=1, method=mfbm_method)
         data.append(serie)
         labels.append(1)
     
-
-
-    start2 = 0.6499999999999999
-    action21 = HurstUpOrDown(start2, 150, 600, "down")
-    action22 = HurstUpOrDown(0.6, 350, 600, "up")
-    hurst_actions2 = [action21,action22]
-    for x in range(0,count):
-        serie = fbm(seq_len-1, start2, 1, 'daviesharte', hurst_actions2)
+    for x in range(0,count):       
+        serie = mbm(n=seq_len-1, hurst=h2, length=1, method=mfbm_method)
         data.append(serie)
         labels.append(2)
 
-
-    start3 = 0.57
-    hurst_actions3 = [None,None]
-    for x in range(0,count):
-        serie = fbm(seq_len-1, start3, 1, 'daviesharte', hurst_actions3)
+    for x in range(0,count):       
+        serie = mbm(n=seq_len-1, hurst=h3, length=1, method=mfbm_method)
         data.append(serie)
         labels.append(3)
-
-    #start4 = 0.6499999999999999
-    #hurst_actions4 = [None,None]
-    #for x in range(0,count):
-    #    serie = fbm(seq_len-1, start4, 1, 'daviesharte', hurst_actions4)
-    #    data.append(serie)
-    #    labels.append(4)
-
-    #for x in range(0,count):
-    #    data_series = fbm(600-1, 0.8, 1, 'cholesky', [0.7,0.8,0.8])
-    #    data.append(data_series)
-    #    labels.append(3)
-        
+           
     return np.array(data), np.array(labels)
 
 
