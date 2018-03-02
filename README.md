@@ -32,16 +32,24 @@ Hurst 0.4:
 [fbm_h4]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/fbm_h4.JPG "fbm_h4"
 
 ### Proposal2
-Here we utilize the characteristics of multi fractional Brownian motion where Hurst value is dynamic and each unique Hurst function corresponds to one label. Following realization is dominated by a Hurst function in form of ramp function.
-![Figure - 0.5][ramp]
+Here we utilize the characteristics of multi fractional Brownian motion where Hurst value is dynamic and each unique Hurst function corresponds to one label. 
 
-[ramp]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/ramp.JPG "ramp"
+multifractional realization for ramp function:
+```python
+s = "Python syntax highlighting"
+print s
+```
 
-A realization that is multifractional:
+![Figure - 0.9][mfbmh1]
 
-![Figure - 0.9][mfbm1]
+[mfbmh1]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfbm_h1.JPG "mfbm1"
 
-[mfbm1]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfbm.JPG "mfbm1"
+
+mfbm realization for ramp function:
+
+![Figure - 1.9][mfbmh2]
+
+[mfbmh2]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfbm_h2.JPG "mfbm1"
 
 ## Generate correlated random digit sequence
 This [wiki page](https://en.wikipedia.org/wiki/Fractional_Brownian_motion) and [youtube video](https://www.youtube.com/watch?v=QCqsJVS8p5A) provide a great overview of the whole process. This [github project](https://github.com/crflynn/fbm) contains the implementation for three different approaches – “daviesharte”, “cholesky” and “hosking”. 
