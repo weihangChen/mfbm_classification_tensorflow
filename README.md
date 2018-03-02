@@ -75,7 +75,8 @@ This [wiki page](https://en.wikipedia.org/wiki/Fractional_Brownian_motion) and [
 
 * Step4: multiply random numbers (generated from step1) as single column vector with the standard deviation matrix (generated from step3). 
 
-Obviously, there is math formular for that, but if you don't understand the part with covariance matrix, you probably won't figure out why classification is possible in this task, which is the tricky part. Otherwise everything is inside of this [wonderful project] (https://github.com/crflynn/fbm)
+Obviously, there is math formular for that, but if you don't understand the part with covariance matrix, you probably won't figure out why classification is possible in this task, which is the tricky part. Otherwise everything is inside of this 
+[wonderful project](https://github.com/crflynn/fbm)
 
 
 ## Training and Classification
