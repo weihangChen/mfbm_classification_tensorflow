@@ -6,7 +6,7 @@ The task is about building a communication protocol, given following user senari
 * receiver decode the sequence back to 64-characters
 
 
-Brownian motion can be used to generate correlated random numbers and the generated sequence is different at each realizationand. The correlation is derived from the covariance matrix and it makes classification possible, hence it is used in the sender side to generate sequence. What is more interesting is that we used to apply machine learning technique to gathered data, in this task, the data is manufactured. At the receiver side, we use CNN + Tensorflow to build the sequence classifier. 
+Brownian motion can be used to generate correlated random numbers and the generated sequence is different at each realizationand. The correlation is derived from the covariance matrix and it makes classification possible, hence it is used in the sender side to generate sequence. What is more interesting is that we used to apply machine learning technique to gathered data, in this task, the data is manufactured. At the receiver side, we use CNN + Tensorflow to build the sequence classifier. Other functional requirement is that, ex. the difference between hurst value should not be over 0.5, so the generated sequences can not be distinguished easily.
 
 
 Two solutions are discussed in the second section, “correlated random number generation” and “machine learning training” are discussed in section three and four. Here are two simple videoes showing the encode, classify and decode process, first video is done in fbm and the second is done in mfbm.
