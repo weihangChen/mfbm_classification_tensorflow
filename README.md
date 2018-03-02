@@ -75,6 +75,8 @@ This [wiki page](https://en.wikipedia.org/wiki/Fractional_Brownian_motion) and [
 
 * Step4: multiply random numbers (generated from step1) as single column vector with the standard deviation matrix (generated from step3). 
 
+Obviously, there is math formular for that, but if you don't understand the part with covariance matrix, you probably won't figure out why classification is possible in this task, which is the tricky part. Otherwise everything is inside of this [wonderful project] (https://github.com/crflynn/fbm)
+
 
 ## Training and Classification
 Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](https://www.diva-portal.org/smash/get/diva2:828116/FULLTEXT01.pdf)), ARIMA models or the implementation in this [project](https://github.com/PTRRupprecht/GenHurst) is a good fit for manual feature extraction, but I decided to go for unsupervised feature extraction + classification using CNN and Tensorflow. These resources ([ref1](https://burakhimmetoglu.com/2017/08/22/time-series-classification-with-tensorflow/), [ref2](https://mapr.com/blog/deep-learning-tensorflow/) and [ref3](https://blog.cardiogr.am/applying-artificial-intelligence-in-medicine-our-early-results-78bfe7605d32)) analyze time series data to solve classification problem or predict future value. 
