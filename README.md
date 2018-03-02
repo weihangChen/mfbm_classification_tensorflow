@@ -64,7 +64,7 @@ def h2(t):
 [mfbmh2]: https://github.com/weihangChen/mfbm_classification_tensorflow/blob/master/mfbm/images/mfbm_h2.JPG "mfbm1"
 
 ## Generate correlated random digit sequence
-This [wiki page](https://en.wikipedia.org/wiki/Fractional_Brownian_motion) and [youtube video](https://www.youtube.com/watch?v=QCqsJVS8p5A) provide a great overview of the whole process. This [github project](https://github.com/crflynn/fbm) contains the implementation for three different approaches – “daviesharte”, “cholesky” and “hosking”. 
+This [wiki page](https://en.wikipedia.org/wiki/Fractional_Brownian_motion) and [youtube video](https://www.youtube.com/watch?v=QCqsJVS8p5A) provide a great overview of the whole process. This [github project](https://github.com/crflynn/fbm) contains the implementation for three different fbm methods – “daviesharte”, “cholesky” and “hosking” + one mfbm method - "riemannliouville".
 ([ref1](https://stats.stackexchange.com/questions/38856/how-to-generate-correlated-random-numbers-given-means-variances-and-degree-of))
 
 * Step1: Generate random numbers from Gaussian distribution ([ref1](http://blog.csdn.net/lanchunhui/article/details/50163669), [ref2](https://www.youtube.com/watch?v=4PLJv84014I))
