@@ -36,8 +36,12 @@ Here we utilize the characteristics of multi fractional Brownian motion where Hu
 
 multifractional realization for ramp function:
 ```python
-s = "Python syntax highlighting"
-print s
+def h1(t):
+    if t <= 0.5:
+        return 0.2
+    if 0.5 < t <= 0.7:
+        return 0.2 + (t - 0.5)
+    return 0.4
 ```
 
 ![Figure - 0.9][mfbmh1]
@@ -46,6 +50,14 @@ print s
 
 
 mfbm realization for ramp function:
+```python
+def h2(t):
+    if t <= 0.5:
+        return 0.4
+    if 0.5 < t <= 0.7:
+        return 0.4 - (t - 0.5)
+    return 0.25
+```
 
 ![Figure - 1.9][mfbmh2]
 
