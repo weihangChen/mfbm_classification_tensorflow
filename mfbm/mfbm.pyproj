@@ -85,7 +85,6 @@
     <Content Include="images\mfbm_h1.JPG" />
     <Content Include="images\mfbm_h2.JPG" />
     <Content Include="images\mfmb_600_acc_3chars.JPG" />
-    <Content Include="images\ramp.JPG" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
