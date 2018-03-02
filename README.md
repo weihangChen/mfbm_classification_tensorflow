@@ -82,7 +82,7 @@ Obviously, there is math formular for that, but if you don't understand the part
 ## Training and Classification
 Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](https://www.diva-portal.org/smash/get/diva2:828116/FULLTEXT01.pdf)), ARIMA models or the implementation in this [project](https://github.com/PTRRupprecht/GenHurst) is a good fit for manual feature extraction, but I decided to go for unsupervised feature extraction + classification using CNN and Tensorflow. These resources ([ref1](https://burakhimmetoglu.com/2017/08/22/time-series-classification-with-tensorflow/), [ref2](https://mapr.com/blog/deep-learning-tensorflow/) and [ref3](https://blog.cardiogr.am/applying-artificial-intelligence-in-medicine-our-early-results-78bfe7605d32)) analyze time series data to solve classification problem or predict future value. 
 
-**Solution1**: there are only three labels, realizations are made using Hurst0.7, Hurst0.75 and Hurst0.8. 10000 samples with sequence length 256 for each Hurst value are sampled as training and validation dataset; and the trained accuracy on validation dataset is 93% - 98% 
+**Solution1 - fbm**: there are only three labels, realizations are made using Hurst0.7, Hurst0.75 and Hurst0.8. 10000 samples with sequence length 256 for each Hurst value are sampled as training and validation dataset; and the trained accuracy on validation dataset is 93% - 98% 
 
 ![Figure - 11][fbm_256_acc_26chars]
 
@@ -90,7 +90,7 @@ Hurst value estimator ([paper1](https://arxiv.org/pdf/1201.4786.pdf), [paper2](h
 
 
 
-**Solution2**:
+**Solution2 -mfbm**:
 Sequence length is 600 and deep learning architecture remains the same, when Hurst value difference is lower than 0.05, achieved accuracy only lands on 70%. Once we let it goes up to 0.07 then the accuracy lands on 99% with 3 labels
 
 ![Figure - 12][mfmb_600_acc_3chars]
